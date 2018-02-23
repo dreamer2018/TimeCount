@@ -113,7 +113,7 @@
 
 
     $(document).ready(
-        $.get('http://127.0.0.1:8000/test/', function (data, status) {
+        $.get('/test/', function (data, status) {
             if (status != "success") {
                 alert("status:" + status);
             } else {
