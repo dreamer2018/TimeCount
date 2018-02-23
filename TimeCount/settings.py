@@ -80,8 +80,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'timecountdb',
-        'USER': 'root',
-        'PASSWORD': 'root',
+        'USER': 'timecounter',
+        'PASSWORD': 'timecounter',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }

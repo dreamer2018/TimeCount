@@ -18,3 +18,8 @@ class TimePoint(models.Model):
             return None
         return tp
 
+
+class UploadImg(models.Model):
+    title = models.CharField(max_length=128, null=False)
+    describe = models.CharField(max_length=2048, null=True)
+    path = models.CharField(max_length=256)
