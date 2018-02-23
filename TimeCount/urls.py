@@ -14,10 +14,12 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from Main.views import get_timestamp, index
+from Main.views import get_timestamp, index, image, get_image
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^test/$', get_timestamp),
     url(r'^$', index),
+    url(r'^image/$', image),
+    url(r'img/$', get_image),
 ]

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/static/js/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+<img id="img">
+<script>
+    $(document).ready(
+        $.get('/img/', function (data, status) {
+            if(status == 'success'){
+                var src = JSON.parse(data).path;
+                $("#img").attr('src', src);
+            }else{
+                alert("error:"+ status)
+            }
+        })
+    )
+</script>
+</body>
+</html>
